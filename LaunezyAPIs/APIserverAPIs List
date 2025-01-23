@@ -1,0 +1,31 @@
+API Endpoints for User Screens
+Authentication
+
+POST /auth/signup
+Registers a new user.
+POST /auth/login
+Authenticates the user and returns a JWT.
+User Profile
+
+GET /users/profile
+Fetches user profile details.
+PUT /users/profile
+Updates user profile details.
+Shop Search
+
+GET /shops
+Fetches nearby shops based on location (?location=<area>).
+Orders
+
+POST /orders
+Creates a new order with selected services.
+GET /orders
+Fetches all orders for the logged-in user.
+GET /orders/:id
+Fetches details of a specific order.
+Checkout
+
+POST /orders/checkout
+Processes payment and confirms the order.
+GET /orders/:id/summary
+Returns order summary after payment.
